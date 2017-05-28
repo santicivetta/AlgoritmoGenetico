@@ -1,3 +1,4 @@
+package cromosomas;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Random;
@@ -6,13 +7,13 @@ public class Poblacion {
     private ArrayList<Individuo> individuos;
     private Individuo solucion;
     //Constructores
-    public Poblacion(Integer tamañoPob,Integer tamañoIndividuo) {
+    public Poblacion(Integer tamanoPob,Integer tamanoIndividuo) {
         this.setIndividuos(new ArrayList<Individuo>());
-        for (int i = 0; i < tamañoPob; i++) {
-            Individuo nuevoIndividuo = new Individuo(tamañoIndividuo);
+        for (int i = 0; i < tamanoPob; i++) {
+            Individuo nuevoIndividuo = new Individuo(tamanoIndividuo);
             this.getIndividuos().add(nuevoIndividuo);
         }
-        this.setSolucion(new Individuo(tamañoIndividuo));
+        this.setSolucion(new Individuo(tamanoIndividuo));
     }
     //G&S
     public ArrayList<Individuo> getIndividuos() {

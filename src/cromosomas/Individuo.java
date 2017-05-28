@@ -1,11 +1,13 @@
+package cromosomas;
 import java.util.Random;
+
 import java.math.BigInteger;
 public class Individuo {
     private String hexa;
     private String bin;
     //Constructor
-    public Individuo(Integer tamañoIndividuo){
-        this.setHexa(this.getRandomHexString(tamañoIndividuo));
+    public Individuo(Integer tamanoIndividuo){
+        this.setHexa(this.getRandomHexString(tamanoIndividuo));
         this.setBin(this.toBin(this.getHexa()));
     }
     
@@ -27,15 +29,15 @@ public class Individuo {
     }
     
     //Metodos
-    private String getRandomHexString(Integer tamañoIndividuo){
+    private String getRandomHexString(Integer tamanoIndividuo){
         Random r = new Random();
         Integer num;
         StringBuffer sb = new StringBuffer();
-        while(sb.length() < tamañoIndividuo){
+        while(sb.length() < tamanoIndividuo){
             num=r.nextInt(16)+1;
             sb.append(Integer.toHexString(num));
         }
-        return sb.toString().substring(0, tamañoIndividuo);
+        return sb.toString().substring(0, tamanoIndividuo);
     }
     public String alterarNumBin(int position, String str){
         char[] charArray = str.toCharArray();

@@ -1,17 +1,17 @@
-
+package cromosomas;
 public class Main {
-    
-    public static void main(String[] args) {
-        Integer configuraciones[],tamañoPoblacion,tamañoIndividuos,maximoAMutar;
-        //tamañoIndividuo es en Hexa
+
+	public static void main(String[] args) {
+        Integer configuraciones[],tamanoPoblacion,tamanoIndividuos,maximoAMutar;
+        //tamanoIndividuo es en Hexa
         configuraciones= Archivos.cargarConfiguraciones("src/cromosomas.txt");
-        tamañoPoblacion=configuraciones[0];
-        tamañoIndividuos=configuraciones[1];
+        tamanoPoblacion=configuraciones[0];
+        tamanoIndividuos=configuraciones[1];
         maximoAMutar=configuraciones[2];
         
         
         //Creo poblacion inicial
-        Poblacion miPob = new Poblacion(tamañoPoblacion,tamañoIndividuos);
+        Poblacion miPob = new Poblacion(tamanoPoblacion,tamanoIndividuos);
         miPob.imprimirPoblacion();
         //System.out.println(miPob.getFittest().getFitness(miPob.getSolucion()).toString());
         /*miPob.imprimirPoblacion();
