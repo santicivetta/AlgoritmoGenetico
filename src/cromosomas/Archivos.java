@@ -3,6 +3,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class Archivos {
+	
+	//MARCELITO ESTAS AHI?
 
 	public static Integer[] cargarConfiguraciones(String archivo) {
 		BufferedReader br = null;
