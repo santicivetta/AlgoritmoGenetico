@@ -4,7 +4,7 @@ public class Main {
 	public static void main(String[] args) {
         Integer configuraciones[],tamanoPoblacion,tamanoIndividuos,maximoAMutar;
         //tamanoIndividuo es en Hexa
-        configuraciones= Archivos.cargarConfiguraciones("src/cromosomas.txt");
+        configuraciones= Archivos.cargarConfiguraciones("src/cromosomas/cromosomas.txt");
         tamanoPoblacion=configuraciones[0];
         tamanoIndividuos=configuraciones[1];
         maximoAMutar=configuraciones[2];
